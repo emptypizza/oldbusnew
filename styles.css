@@ -25,3 +25,67 @@ button,input{font:inherit}button,a,input{-webkit-tap-highlight-color:transparent
 @media(max-width:900px){.chart-axis{margin-right:40px}}
 @media(max-width:680px){.chart-axis{margin-right:44px}}
 @media(max-width:365px){.chart-axis{margin-right:38px}}
+
+.donut{position:relative}
+.donut-svg{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.donut-inner{position:relative;z-index:1}
+.donut.is-ready{background:none}
+.donut-arc{cursor:pointer;transition:opacity .2s var(--ease)}
+.donut-arc.is-dim,.scrap-bar span.is-dim{opacity:.32}
+.donut-arc:hover{opacity:1}
+.fleet-legend>.legend-button,.scrap-legend>.legend-button{color:inherit;background:transparent;text-align:left}
+.fleet-legend>.legend-button{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:12px 8px;border:0;border-bottom:1px solid #446354;border-radius:8px}
+.fleet-legend>.legend-button:last-child{border-bottom:0}
+.fleet-legend>.legend-button[aria-pressed="true"]{background:#214b3d}
+.fleet-legend .legend-name,.scrap-legend .legend-name{display:flex;align-items:center;gap:7px}
+.fleet-legend .legend-name{font-size:11px;white-space:nowrap}
+.fleet-legend .legend-figure{text-align:right;font-family:Arial,Helvetica,sans-serif;font-size:13px;white-space:nowrap}
+.fleet-legend .legend-figure small{display:block;color:#b8cfb8;font-size:10px;margin-top:2px}
+.scrap-legend>.legend-button{display:flex;flex-direction:column;align-items:flex-start;gap:3px;border:0;border-radius:12px;padding:6px 8px}
+.scrap-legend>.legend-button[aria-pressed="true"]{background:#d7e6a6}
+.scrap-legend .legend-name{font-size:10px;color:#5d6d4d}
+.scrap-legend .legend-figure{font-family:Arial,Helvetica,sans-serif;font-size:22px;letter-spacing:-.5px}
+.scrap-legend .legend-figure small{font-size:10px;margin-left:5px}
+.scrap-bar span{cursor:pointer}
+.route-meta{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.route-meta-label{display:block;font-size:10px;color:#6b7c62;margin-bottom:4px}
+.route-factors{list-style:none;display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0}
+.route-factors li{font-size:11px;line-height:1.5;color:#4f6248;border:1px solid #d6ddcd;border-radius:20px;padding:3px 8px}
+.route-checkline{font-size:12px;line-height:1.7;color:#677560}
+.route-related{margin-top:12px}
+.price-row{display:block}
+.price-row-toggle{display:grid;grid-template-columns:155px 1fr;align-items:center;gap:17px;width:100%;padding:5px 0;background:transparent;text-align:left;border-radius:8px}
+.price-row-toggle:hover,.price-row-toggle[aria-expanded="true"]{background:#f4f6ee}
+.price-detail{margin:0 0 8px 172px;font-size:10px;line-height:1.7;color:#6d7c68}
+.price-detail p{margin:0}
+.price-detail a{display:inline-block;margin-top:4px;text-decoration:underline;text-underline-offset:3px}
+.cost-hint{font-size:10px;line-height:1.7;color:#d5e4bc;margin-top:10px}
+.cost-inputs label.is-relevant{color:#e7f3c4}
+.cost-inputs label.is-relevant input{border-color:#e6f0b9}
+@media(max-width:1150px){
+  .fleet-legend .legend-name{font-size:10px}
+  .fleet-legend .legend-figure{font-size:12px}
+  .price-row-toggle{grid-template-columns:130px 1fr;gap:12px}
+  .price-detail{margin-left:142px}
+}
+@media(max-width:900px){
+  .fleet-legend>.legend-button{padding:6px 8px}
+  .fleet-legend>.legend-button:nth-child(3),.fleet-legend>.legend-button:nth-child(4){border-bottom:0}
+  .price-row-toggle{grid-template-columns:110px 1fr;gap:10px}
+  .price-detail{margin-left:120px}
+}
+@media(max-width:680px){
+  .fleet-legend>.legend-button{padding:8px 6px}
+  .fleet-legend>.legend-button:nth-child(3){border-bottom:1px solid #446354}
+  .fleet-legend .legend-figure{font-size:12px}
+  .fleet-legend .legend-figure small{font-size:9px}
+  .scrap-legend .legend-figure{font-size:25px}
+  .price-row-toggle{grid-template-columns:112px 1fr;gap:12px}
+  .price-detail{margin-left:0}
+  .route-factors li,.route-checkline{font-size:11px}
+}
+@media(max-width:365px){
+  .fleet-legend .legend-name{font-size:9px}
+  .fleet-legend .legend-figure{font-size:11px}
+  .price-row-toggle{grid-template-columns:105px 1fr;gap:8px}
+}
