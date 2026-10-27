@@ -1,0 +1,589 @@
+{
+  "meta": {
+    "title": "대한민국 폐버스 시장 한눈에 보기",
+    "shortTitle": "폐버스의 다음 쓰임",
+    "researchAsOf": "2026-10-27",
+    "language": "ko-KR",
+    "currency": "KRW",
+    "scope": "국내에서 운행을 마친 버스의 중고 매매·수출·해체·공간 재사용 시장",
+    "method": "공개 통계, 거래 게시물, 공공 매각 공고를 확인하고 거래 단계와 집계 범위를 구분했다.",
+    "marketSizeStatus": "폐버스만을 분리한 전체 거래액·거래량은 이번 공개자료 조사에서 확인하지 못했다.",
+    "priceStatus": "가격은 공개 견적·호가·입찰 예정가격 사례이며, 실제 성사·낙찰가격이 아니다."
+  },
+  "headline": {
+    "eyebrow": "KOREA OLD BUS MARKET · 2026.10",
+    "title": "운행이 끝난 버스, 네 갈래의 시장으로",
+    "description": "차량의 상태와 등록 서류에 따라 국내 중고 운행, 해외 수출, 해체·재활용, 공간 재사용으로 나뉜다.",
+    "keyTakeaway": "폐버스 가격을 비교할 때는 무엇을 사고파는지, 어떤 용도로 쓸 수 있는지를 먼저 확인해야 한다."
+  },
+  "fleet": {
+    "id": "route_bus_fleet",
+    "title": "노선버스 보유 기반",
+    "total": 44181,
+    "unit": "대",
+    "operators": 562,
+    "operatorsUnit": "개 업체",
+    "dataAsOf": "2026-07-31",
+    "dateLabel": "2026년 7월 말",
+    "categories": [
+      {
+        "id": "city",
+        "label": "시내버스",
+        "vehicles": 36197,
+        "operators": 397
+      },
+      {
+        "id": "rural",
+        "label": "농어촌버스",
+        "vehicles": 2152,
+        "operators": 88
+      },
+      {
+        "id": "intercity",
+        "label": "시외버스",
+        "vehicles": 4500,
+        "operators": 66
+      },
+      {
+        "id": "express",
+        "label": "고속버스",
+        "vehicles": 1332,
+        "operators": 11
+      }
+    ],
+    "definition": "전국버스운송사업조합연합회가 집계한 위 4개 업종의 보유 차량 수다.",
+    "caution": "폐버스 발생량이나 거래량이 아니다. 전세버스·마을버스·자가용 버스 전체를 포함한 수치도 아니다.",
+    "sourceIds": [
+      "bus_fleet_2026_07"
+    ]
+  },
+  "scrappage": {
+    "id": "van_scrappage_2025",
+    "title": "승합차 폐차 실적",
+    "total": 34731,
+    "unit": "대",
+    "periodStart": "2025-01-01",
+    "periodEnd": "2025-12-31",
+    "dateLabel": "2025년 연간",
+    "categories": [
+      {
+        "id": "commercial",
+        "label": "사업용 승합차",
+        "vehicles": 4790
+      },
+      {
+        "id": "noncommercial",
+        "label": "비사업용 승합차",
+        "vehicles": 29941
+      }
+    ],
+    "calculation": "4,790 + 29,941 = 34,731",
+    "definition": "한국자동차해체재활용업협회 자료의 사업용·비사업용 승합차 폐차 실적을 합산했다.",
+    "verification": "원본 엑셀의 연간 누계와 12개월 월별 합계가 일치하는 것을 확인했다.",
+    "caution": "소형 승합차까지 포함한다. 대형 폐버스만의 실적이나 국내 중고 매매·수출·공간 재사용 물량으로 해석할 수 없다.",
+    "relationshipToFleet": "노선버스 보유량과 승합차 폐차 실적은 대상·기간·측정 방식이 달라 직접 비교하거나 교체율을 계산할 수 없다.",
+    "sourceIds": [
+      "kadra_scrappage_2025"
+    ]
+  },
+  "dispositionPaths": [
+    {
+      "id": "domestic_used",
+      "number": "01",
+      "title": "국내 중고 운행",
+      "shortLabel": "다시 달리기",
+      "description": "운행 가능한 차량을 국내 수요자에게 매매한다.",
+      "buyer": "중고버스 구매자·운수사업자",
+      "valueFactors": [
+        "차종·연식",
+        "주행거리·정비 이력",
+        "등록 상태·운행 용도"
+      ],
+      "check": "차량 가격과 영업권·번호판·사업 양도양수 조건을 구분한다.",
+      "sourceIds": [
+        "hellowbus_used_asks",
+        "charter_supply_control",
+        "easylaw_vehicle_transfer"
+      ]
+    },
+    {
+      "id": "export",
+      "number": "02",
+      "title": "해외 수출",
+      "shortLabel": "다른 나라로",
+      "description": "수입국 조건에 맞는 중고버스를 수출업체와 현지 유통망을 통해 판매한다.",
+      "buyer": "중고버스 수출업체·해외 수입자",
+      "valueFactors": [
+        "수입국의 차령·배출가스 요건",
+        "현지 수요·부품 조달",
+        "선적·운송 비용"
+      ],
+      "check": "수출 가능 여부와 목적지 규정을 확인한다. 전체 중고차 수출액이나 HS 8702 합계를 폐버스 시장 규모로 사용하지 않는다.",
+      "sourceIds": [
+        "kotra_used_bus_distribution_2022",
+        "easylaw_vehicle_deregistration"
+      ]
+    },
+    {
+      "id": "dismantling",
+      "number": "03",
+      "title": "해체·재활용",
+      "shortLabel": "부품과 소재로",
+      "description": "폐차 조건에 따라 차량을 처리하고 재사용 부품과 금속 등을 회수한다.",
+      "buyer": "자동차해체재활용업체",
+      "valueFactors": [
+        "부품 상태",
+        "회수 가능한 소재",
+        "견인·말소·처리 비용"
+      ],
+      "check": "폐차 전용 매각은 공고의 참가 자격과 처리 조건을 따른다.",
+      "sourceIds": [
+        "hellowbus_purchase_quotes",
+        "uctf_scrap_sale_2026",
+        "goseong_scrap_sale_2024",
+        "easylaw_vehicle_scrapping"
+      ]
+    },
+    {
+      "id": "space_reuse",
+      "number": "04",
+      "title": "공간 재사용",
+      "shortLabel": "새로운 장소로",
+      "description": "차체를 전시·체험·휴게 공간 등으로 활용하는 경로다.",
+      "buyer": "공간 운영자·개조 사업자",
+      "valueFactors": [
+        "차체 상태·누수",
+        "운송·설치",
+        "내장·전기·급배수 공사"
+      ],
+      "check": "부지와 용도에 맞는 인허가, 설치·운영 가능 여부를 구매 전에 확인한다. 차량 구매가만으로 총사업비를 판단하지 않는다.",
+      "evidenceNote": "활용 경로의 설명이며 별도 시장 규모·평균 개조비는 산정하지 않았다.",
+      "sourceIds": [
+        "easylaw_vehicle_deregistration",
+        "easylaw_building_definition",
+        "easylaw_vehicle_tuning"
+      ]
+    }
+  ],
+  "priceGroups": [
+    {
+      "id": "purchase_quotes",
+      "title": "민간 매입견적",
+      "subtitle": "매입업체가 게시한 금액",
+      "transactionStage": "purchase_quote",
+      "rangeMinKrw": 3000000,
+      "rangeMaxKrw": 8500000,
+      "rangeLabel": "300–850만 원",
+      "sampleCount": 6,
+      "periodLabel": "2026년 5–9월 게시 사례",
+      "caution": "한 업체의 공개 매입견적 6건이다. 실제 지급액이 아니며 부가세·견인·말소 비용 포함 여부는 확인하지 못했다.",
+      "sourceIds": [
+        "hellowbus_purchase_quotes"
+      ],
+      "items": [
+        {
+          "id": "quote_aerotown_2011",
+          "listingDate": "2026-08-11",
+          "model": "e-에어로타운",
+          "modelYear": 2011,
+          "engineLabel": "D6GA 225",
+          "amountKrw": 3000000,
+          "priceLabel": "300만 원",
+          "vatIncluded": null,
+          "transportIncluded": null,
+          "actualTransactionVerified": false
+        },
+        {
+          "id": "quote_super_aerocity_2012",
+          "listingDate": "2026-05-18",
+          "model": "뉴슈퍼에어로시티",
+          "modelYear": 2012,
+          "engineLabel": "D6HA 300",
+          "amountKrw": 4000000,
+          "priceLabel": "400만 원",
+          "vatIncluded": null,
+          "transportIncluded": null,
+          "actualTransactionVerified": false
+        },
+        {
+          "id": "quote_bx212_2015",
+          "listingDate": "2026-09-03",
+          "model": "BX212",
+          "modelYear": 2015,
+          "engineLabel": "F3GFE612D 420",
+          "amountKrw": 5000000,
+          "priceLabel": "500만 원",
+          "vatIncluded": null,
+          "transportIncluded": null,
+          "actualTransactionVerified": false
+        },
+        {
+          "id": "quote_universe_luxury_2015",
+          "listingDate": "2026-08-11",
+          "model": "유니버스 럭셔리",
+          "modelYear": 2015,
+          "engineLabel": "C6AF 340",
+          "amountKrw": 6000000,
+          "priceLabel": "600만 원",
+          "vatIncluded": null,
+          "transportIncluded": null,
+          "actualTransactionVerified": false
+        },
+        {
+          "id": "quote_universe_prime_2013",
+          "listingDate": "2026-08-25",
+          "model": "유니버스 프라임",
+          "modelYear": 2013,
+          "engineLabel": "D6CD 425",
+          "amountKrw": 8000000,
+          "priceLabel": "800만 원",
+          "vatIncluded": null,
+          "transportIncluded": null,
+          "actualTransactionVerified": false
+        },
+        {
+          "id": "quote_granbird_bluesky_2012",
+          "listingDate": "2026-05-10",
+          "model": "그랜버드 블루스카이",
+          "modelYear": 2012,
+          "engineLabel": "D6CD 425",
+          "amountKrw": 8500000,
+          "priceLabel": "850만 원",
+          "vatIncluded": null,
+          "transportIncluded": null,
+          "actualTransactionVerified": false
+        }
+      ]
+    },
+    {
+      "id": "used_asking_prices",
+      "title": "중고 판매 호가",
+      "subtitle": "판매자가 제시한 금액",
+      "transactionStage": "seller_asking_price",
+      "rangeMinKrw": 8000000,
+      "rangeMaxKrw": 30000000,
+      "rangeLabel": "800–3,000만 원",
+      "sampleCount": 5,
+      "periodLabel": "2026년 10월 게시 사례",
+      "caution": "차종·연식·주행거리·등록 상태가 서로 다르다. 공개 호가이며 판매 완료나 해당 가격의 실거래를 확인한 것은 아니다.",
+      "sourceIds": [
+        "hellowbus_used_asks"
+      ],
+      "items": [
+        {
+          "id": "ask_bx212_2012",
+          "listingDate": "2026-10-15",
+          "model": "BX212",
+          "yearMonthLabel": "2012.06",
+          "seats": 30,
+          "mileageKm": 631623,
+          "amountKrw": 8000000,
+          "priceLabel": "800만 원",
+          "registrationNote": null,
+          "vatIncluded": null,
+          "actualTransactionVerified": false
+        },
+        {
+          "id": "ask_universe_luxury_2013",
+          "listingDate": "2026-10-21",
+          "model": "유니버스 럭셔리",
+          "yearMonthLabel": "2013.09",
+          "seats": 46,
+          "mileageKm": 821497,
+          "amountKrw": 11500000,
+          "priceLabel": "1,150만 원",
+          "registrationNote": "매물에 ‘말소차량’ 표기. 운행·재등록 가능 여부를 별도로 확인해야 한다.",
+          "vatIncluded": null,
+          "actualTransactionVerified": false
+        },
+        {
+          "id": "ask_universe_prime_2013",
+          "listingDate": "2026-10-21",
+          "model": "유니버스 프라임",
+          "yearMonthLabel": "2013.03",
+          "seats": 47,
+          "mileageKm": 739497,
+          "amountKrw": 15000000,
+          "priceLabel": "1,500만 원",
+          "registrationNote": null,
+          "vatIncluded": null,
+          "actualTransactionVerified": false
+        },
+        {
+          "id": "ask_county_long_2015",
+          "listingDate": "2026-10-21",
+          "model": "카운티 롱바디",
+          "yearMonthLabel": "2015.06",
+          "seats": 21,
+          "mileageKm": 227235,
+          "amountKrw": 19000000,
+          "priceLabel": "1,900만 원",
+          "registrationNote": null,
+          "vatIncluded": null,
+          "actualTransactionVerified": false
+        },
+        {
+          "id": "ask_granbird_silkroad_2014",
+          "listingDate": "2026-10-22",
+          "model": "그랜버드 실크로드",
+          "yearMonthLabel": "2014.09",
+          "seats": 46,
+          "mileageKm": 600148,
+          "amountKrw": 30000000,
+          "priceLabel": "3,000만 원",
+          "registrationNote": null,
+          "vatIncluded": null,
+          "actualTransactionVerified": false
+        }
+      ]
+    },
+    {
+      "id": "public_reserve_prices",
+      "title": "공공 매각 예정가격",
+      "subtitle": "폐차 조건이 붙은 입찰 기준 금액",
+      "transactionStage": "public_reserve_price",
+      "rangeMinKrw": 2631700,
+      "rangeMaxKrw": 3100000,
+      "rangeLabel": "대당 약 263–310만 원",
+      "sampleCount": 2,
+      "sampleUnit": "공고",
+      "periodLabel": "2024년·2026년 공고 사례",
+      "caution": "폐차 전용 조건의 예정가격이다. 실제 낙찰가는 확인하지 못했다. 개인이 매입해 그대로 운행·전시할 수 있는 가격으로 해석하면 안 된다.",
+      "sourceIds": [
+        "uctf_scrap_sale_2026",
+        "goseong_scrap_sale_2024"
+      ],
+      "items": [
+        {
+          "id": "public_uctf_universe_2014",
+          "listingDate": "2026-02-05",
+          "seller": "울산문화관광재단",
+          "model": "유니버스",
+          "modelYear": 2014,
+          "seats": 46,
+          "vehicles": 1,
+          "amountKrw": 3100000,
+          "lotAmountKrw": 3100000,
+          "priceLabel": "310만 원",
+          "vatIncluded": true,
+          "condition": "폐차 전용",
+          "actualTransactionVerified": false,
+          "sourceIds": [
+            "uctf_scrap_sale_2026"
+          ]
+        },
+        {
+          "id": "public_goseong_bs090_2013",
+          "listingDate": "2024-03-05",
+          "seller": "고성교육지원청",
+          "model": "BS090",
+          "modelYear": 2013,
+          "seats": null,
+          "vehicles": 4,
+          "amountKrw": 2631700,
+          "lotAmountKrw": 10526800,
+          "priceLabel": "대당 263만 1,700원",
+          "lotPriceLabel": "4대 합계 1,052만 6,800원",
+          "vatIncluded": null,
+          "condition": "폐차 전용",
+          "actualTransactionVerified": false,
+          "sourceIds": [
+            "goseong_scrap_sale_2024"
+          ]
+        }
+      ]
+    }
+  ],
+  "priceInterpretation": {
+    "title": "같은 버스 가격표가 아니다",
+    "description": "매입견적, 판매 호가, 폐차 전용 입찰 예정가격은 거래 단계와 조건이 다르다.",
+    "rules": [
+      "위 범위는 수집한 사례의 최저·최고 금액이다. 전국 평균 시세나 시장 전체 가격 범위가 아니다.",
+      "서로 다른 차량의 매입견적과 판매 호가를 빼서 유통 마진을 계산할 수 없다.",
+      "차량 가격 외에 부가세·운송·견인·정비·검사·말소·설치 비용의 포함 여부를 확인한다.",
+      "연식만으로 가격을 판단하지 않는다. 상태, 주행거리, 등록 서류와 거래 조건을 함께 비교한다."
+    ]
+  },
+  "purchaseChecklist": [
+    {
+      "title": "사용 목적",
+      "detail": "국내 운행·수출·해체·고정 공간 중 어떤 용도인지 먼저 정한다."
+    },
+    {
+      "title": "차량과 서류",
+      "detail": "등록원부, 말소 여부와 사유, 압류·저당, 정비 이력과 실제 차량 상태를 확인한다."
+    },
+    {
+      "title": "거래 조건",
+      "detail": "차량만의 금액인지, 영업권·번호판·부가세·운송비가 포함됐는지 구분한다."
+    },
+    {
+      "title": "총비용",
+      "detail": "매입가에 운송·복원·정비·개조·설치·보관 비용을 더해 비교한다."
+    },
+    {
+      "title": "실행 가능성",
+      "detail": "운행·수출·설치에 필요한 허가와 등록 가능 여부를 해당 차량과 부지 기준으로 확인한다."
+    }
+  ],
+  "sources": [
+    {
+      "id": "bus_fleet_2026_07",
+      "title": "통계현황 · 종업원 취업현황",
+      "publisher": "전국버스운송사업조합연합회",
+      "url": "https://www.bus.or.kr/information/statistics.asp",
+      "dataAsOf": "2026-07-31",
+      "publishedDate": null,
+      "accessedDate": "2026-10-27",
+      "type": "industry_association_statistics",
+      "locator": "2026년 7월 말 기준 표의 업체수·보유대수",
+      "note": "시내·농어촌·시외·고속 4개 업종의 보유량이다."
+    },
+    {
+      "id": "kadra_scrappage_2025",
+      "title": "2025년 폐차 통계",
+      "publisher": "한국자동차해체재활용업협회",
+      "url": "https://www.kadra.or.kr/kadra/contents/sub02/02_01.html?BbsId=2010316112316&idx_num=2634&mode=view",
+      "attachmentUrl": "https://www.kadra.or.kr/download.asp?bbs_id=2010316112316&file_path=20260107&real_file_name=2025%EB%85%84+12%EC%9B%94+%ED%8F%90%EC%B0%A8%ED%86%B5%EA%B3%84.xlsx&save_filename=202617165311_1.xlsx",
+      "dataAsOf": "2025-12-31",
+      "publishedDate": "2026-01-07",
+      "accessedDate": "2026-10-27",
+      "type": "industry_association_statistics",
+      "locator": "첨부 엑셀 ‘지역(표)’ 시트: A1 기간, J21 사업용 승합 4,790, M21 비사업용 승합 29,941",
+      "note": "승합차 전체 실적이며 대형 버스 세부분류는 없다."
+    },
+    {
+      "id": "hellowbus_purchase_quotes",
+      "title": "폐차·수출 매입견적 게시물",
+      "publisher": "헬로우버스상사",
+      "url": "https://www.hellowbus.com/sub/junk_car.php",
+      "dataAsOf": "2026-10-27",
+      "publishedDate": null,
+      "accessedDate": "2026-10-27",
+      "type": "private_purchase_quotes",
+      "locator": "각 사례의 게시일·차종·연식으로 확인",
+      "note": "같은 업체의 공개 견적 관측이다. 게시 내용은 변경되거나 삭제될 수 있다."
+    },
+    {
+      "id": "hellowbus_used_asks",
+      "title": "자가용 중고버스 판매 매물",
+      "publisher": "헬로우버스상사",
+      "url": "https://www.hellowbus.com/sub/product-list-private.php?page=1",
+      "dataAsOf": "2026-10-27",
+      "publishedDate": null,
+      "accessedDate": "2026-10-27",
+      "type": "private_asking_prices",
+      "locator": "2026년 10월 게시일·차종·연식·주행거리로 식별한 매물 5건",
+      "note": "호가 관측이다. 목록의 순서·내용과 판매 상태는 달라질 수 있다."
+    },
+    {
+      "id": "uctf_scrap_sale_2026",
+      "title": "불용 버스 폐차 조건 매각 공고",
+      "publisher": "울산문화관광재단",
+      "url": "https://uctf.or.kr/board/notice/view/202410914885?lang=ko",
+      "dataAsOf": "2026-02-05",
+      "publishedDate": "2026-02-05",
+      "accessedDate": "2026-10-27",
+      "type": "public_sale_notice",
+      "locator": "2014년식 유니버스 46인승, 예정가격 3,100,000원",
+      "note": "부가세 포함. 폐차 전용 예정가격이며 실제 낙찰가는 확인하지 못했다.",
+      "attachmentUrl": "https://uctf.or.kr/api/files/20260205171314.pdf?name=%EC%9A%B8%EC%82%B0%EC%8B%9C%ED%8B%B0%ED%88%AC%EC%96%B4+1%EC%B8%B5%EB%B2%84%EC%8A%A4+%ED%8F%90%EC%B0%A8+%EB%A7%A4%EA%B0%81+%EA%B3%B5%EA%B3%A0.pdf"
+    },
+    {
+      "id": "goseong_scrap_sale_2024",
+      "title": "불용 통학버스 폐차 조건 매각 공고",
+      "publisher": "경상남도고성교육지원청",
+      "url": "https://gsedu.gne.go.kr/gsedu/na/ntt/selectNttInfo.do?mi=3560&nttSn=2594439",
+      "dataAsOf": "2024-03-05",
+      "publishedDate": "2024-03-05",
+      "accessedDate": "2026-10-27",
+      "type": "public_sale_notice",
+      "locator": "2013년식 BS090 4대, 대당 2,631,700원·합계 10,526,800원",
+      "note": "과거 폐차 전용 예정가격 사례다. 현재 시세나 실제 낙찰가가 아니다."
+    },
+    {
+      "id": "charter_supply_control",
+      "title": "전세버스 수급조절 시행기간 연장 알림",
+      "publisher": "서울특별시전세버스운송사업조합",
+      "url": "https://www.tourbus.or.kr/post/1473/",
+      "dataAsOf": "2024-12-01",
+      "publishedDate": "2024-12-02",
+      "accessedDate": "2026-10-27",
+      "type": "industry_association_notice",
+      "locator": "국토교통부고시 제2024-681호에 따른 2024.12.1~2026.11.30 신규등록·증차 제한 안내",
+      "note": "제주 수소전기차 등 제한적 예외가 있다. 차량 소유와 운송사업 운영 자격은 별도로 확인한다."
+    },
+    {
+      "id": "kotra_used_bus_distribution_2022",
+      "title": "과테말라 버스 상품DB",
+      "publisher": "KOTRA 과테말라무역관",
+      "url": "https://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?CONTENTS_NO=1&MENU_ID=170&SITE_NO=3&bbsGbn=01&bbsSn=243%2C403%2C257%2C254&gbn=&hotClipGbn=&pEndDt=&pHsCdType=&pHsCode=&pHsCodeNm=&pIndustCd=&pKbcCd=&pNatCd=&pNttSn=194417&pRegnCd=05&pStartDt=&pageNo=1&recordCountPerPage=&sSearchGbn=&sSearchVal=&updtDt=2022-05-28+07%3A27%3A00&viewType=",
+      "dataAsOf": "2022-06-03",
+      "publishedDate": "2022-06-03",
+      "accessedDate": "2026-10-27",
+      "type": "public_trade_research",
+      "locator": "유통 구조: 중간 수입자가 여러 브랜드의 중고버스를 수입해 현지 소비자에게 공급",
+      "note": "과거 유통 구조 사례로만 사용했다. 현재 수출 규모·세율·수입 가능 조건을 설명하는 자료로 사용하지 않았다."
+    },
+    {
+      "id": "easylaw_vehicle_transfer",
+      "title": "자동차를 이전 받았어요.",
+      "publisher": "찾기쉬운 생활법령정보",
+      "url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?ccfNo=1&cciNo=2&cnpClsNo=3&csmSeq=675&popMenu=ov",
+      "dataAsOf": null,
+      "publishedDate": null,
+      "accessedDate": "2026-10-27",
+      "type": "government_legal_guidance",
+      "locator": "자동차 이전등록의 대상·신청기간·신청절차",
+      "note": "차량 소유권 이전등록의 일반 절차를 설명한다. 여객운송사업의 운영 자격은 별도 확인 대상이다."
+    },
+    {
+      "id": "easylaw_vehicle_deregistration",
+      "title": "자동차말소등록은 어떻게 하나요?",
+      "publisher": "찾기쉬운 생활법령정보",
+      "url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?ccfNo=3&cciNo=2&cnpClsNo=2&csmSeq=675",
+      "dataAsOf": null,
+      "publishedDate": null,
+      "accessedDate": "2026-10-27",
+      "type": "government_legal_guidance",
+      "locator": "말소 사유, 교육·전시·도로 외 특수용도, 수출에 의한 말소등록 이후 절차",
+      "note": "폐차·수출·특수용도 말소를 구분하기 위한 제도 안내다. 개별 차량의 재등록이나 특정 공간 활용을 보장하는 자료는 아니다."
+    },
+    {
+      "id": "easylaw_vehicle_scrapping",
+      "title": "자동차 폐차는 어떻게 하나요?",
+      "publisher": "찾기쉬운 생활법령정보",
+      "url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?ccfNo=3&cciNo=2&cnpClsNo=1&csmSeq=675",
+      "dataAsOf": null,
+      "publishedDate": null,
+      "accessedDate": "2026-10-27",
+      "type": "government_legal_guidance",
+      "locator": "폐차의 정의, 등록된 자동차해체재활용업자, 폐차인수증명서와 폐차 절차",
+      "note": "부품 회수와 법정 폐차 처리의 일반 근거다. 폐차 전용 매각의 참가 자격·처리 조건은 각 매각 공고에서 확인한다."
+    },
+    {
+      "id": "easylaw_building_definition",
+      "title": "건축물이란?",
+      "publisher": "찾기쉬운 생활법령정보",
+      "url": "https://m.easylaw.go.kr/MOB/CsmInfoRetrieve.laf?ccfNo=1&cciNo=1&cnpClsNo=1&csmSeq=1406",
+      "dataAsOf": null,
+      "publishedDate": null,
+      "accessedDate": "2026-10-27",
+      "type": "government_legal_guidance",
+      "locator": "건축물의 정의 및 토지에 정착한다는 의미",
+      "note": "물리적인 이동 가능성만으로 건축물 해당 여부를 판단할 수 없다는 설명의 근거다. 개별 시설과 부지의 적용 여부는 관할기관에서 확인한다."
+    },
+    {
+      "id": "easylaw_vehicle_tuning",
+      "title": "자동차를 개조했어요.",
+      "publisher": "찾기쉬운 생활법령정보",
+      "url": "https://www.easylaw.go.kr/CSP/CnpClsMain.laf?ccfNo=2&cciNo=1&cnpClsNo=2&csmSeq=675&popMenu=ov",
+      "dataAsOf": null,
+      "publishedDate": null,
+      "accessedDate": "2026-10-27",
+      "type": "government_legal_guidance",
+      "locator": "자동차 튜닝의 승인대상·승인신청·작업 및 검사",
+      "note": "도로에서 운행할 차량의 개조를 검토하기 위한 일반 절차다. 고정 설치 공간의 건축·영업 요건과는 구분한다."
+    }
+  ]
+}

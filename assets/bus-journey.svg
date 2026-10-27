@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="570" viewBox="0 0 820 570" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">다음 정거장으로 향하는 오래된 버스</title>
+  <desc id="desc">순환하는 노선 위에 놓인 녹색 빈티지 버스. 오래된 차체 주위에 작은 정거장과 새잎이 어우러져 버스의 다음 생애를 표현한다.</desc>
+  <defs>
+    <clipPath id="side-clip"><rect x="160" y="198" width="398" height="127" rx="11"/></clipPath>
+    <clipPath id="front-clip"><path d="M558 634H613Q625 634 625 646V749Q625 761 613 761H558Z"/></clipPath>
+  </defs>
+
+  <!-- A quiet route that gives the artwork its circular rhythm. -->
+  <path d="M98 406C64 376 89 325 155 298C213 275 219 160 312 123C426 77 616 88 700 181C778 269 747 365 650 421C544 482 380 472 257 435C190 415 132 437 98 406Z" fill="#e6f0b9" opacity=".18"/>
+  <path d="M98 406C64 376 89 325 155 298C213 275 219 160 312 123C426 77 616 88 700 181C778 269 747 365 650 421C544 482 380 472 257 435C190 415 132 437 98 406Z" stroke="#dce3ce" stroke-width="23"/>
+  <path d="M98 406C64 376 89 325 155 298C213 275 219 160 312 123C426 77 616 88 700 181C778 269 747 365 650 421C544 482 380 472 257 435C190 415 132 437 98 406Z" stroke="#f8f6ef" stroke-width="18"/>
+  <path d="M98 406C64 376 89 325 155 298C213 275 219 160 312 123C426 77 616 88 700 181C778 269 747 365 650 421C544 482 380 472 257 435C190 415 132 437 98 406Z" stroke="#163d32" stroke-width="1.3" stroke-dasharray="5 13" stroke-linecap="round" opacity=".22"/>
+
+  <!-- Small stations, route turns and growing things. -->
+  <circle cx="363" cy="106" r="10" fill="#f8f6ef" stroke="#163d32" stroke-width="1.5"/>
+  <circle cx="363" cy="106" r="3.5" fill="#e89862"/>
+  <circle cx="718" cy="337" r="10" fill="#f8f6ef" stroke="#163d32" stroke-width="1.5"/>
+  <circle cx="718" cy="337" r="3.5" fill="#163d32"/>
+  <circle cx="310" cy="450" r="10" fill="#f8f6ef" stroke="#163d32" stroke-width="1.5"/>
+  <circle cx="310" cy="450" r="3.5" fill="#e89862"/>
+  <path d="M611 122L622 124L617 133" stroke="#163d32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M505 462L495 467L500 476" stroke="#163d32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M222 120V95" stroke="#163d32" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M222 108C210 108 202 99 203 89C214 88 223 96 222 108Z" fill="#e6f0b9" stroke="#163d32" stroke-width="1.3"/>
+  <path d="M222 103C222 91 231 84 240 85C241 95 233 103 222 103Z" fill="#163d32"/>
+  <path d="M218 123H227" stroke="#163d32" stroke-width="1.3" stroke-linecap="round"/>
+  <circle cx="274" cy="87" r="3" fill="#e89862"/>
+  <path d="M548 69V77M544 73H552" stroke="#163d32" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M684 102L690 97M692 111L700 111" stroke="#163d32" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- A second-life emblem, deliberately without lettering. -->
+  <circle cx="655" cy="131" r="29" fill="#e6f0b9"/>
+  <path d="M638 133A18 18 0 0 1 665 116M672 127A18 18 0 0 1 645 147" stroke="#163d32" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M659 114L667 116L665 123M651 149L643 147L645 140" stroke="#163d32" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M650 139C644 128 650 120 662 122C665 132 660 139 650 139Z" fill="#163d32"/>
+  <path d="M650 139L658 128" stroke="#e6f0b9" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Bus stop pole and a little waiting platform. -->
+  <ellipse cx="106" cy="357" rx="34" ry="9" fill="#163d32" opacity=".07"/>
+  <path d="M89 353L109 344L127 348L107 358Z" fill="#dce3ce"/>
+  <path d="M107 350V254" stroke="#163d32" stroke-width="3" stroke-linecap="round"/>
+  <path d="M108 350V257" stroke="#f8f6ef" stroke-width=".8"/>
+  <rect x="88" y="224" width="38" height="40" rx="18" fill="#163d32"/>
+  <rect x="94" y="231" width="26" height="27" rx="12" fill="#e6f0b9"/>
+  <rect x="100" y="237" width="14" height="14" rx="3" stroke="#163d32" stroke-width="1.4"/>
+  <path d="M101 244H113M104 251V254M110 251V254" stroke="#163d32" stroke-width="1.4" stroke-linecap="round"/>
+  <circle cx="104" cy="248" r="1" fill="#163d32"/><circle cx="110" cy="248" r="1" fill="#163d32"/>
+  <path d="M113 276H127V294H113" fill="#e89862"/>
+
+  <!-- The bus: long side, sloped roof and a narrow front plane. -->
+  <path d="M165 364L242 318L643 360L566 411Z" fill="#163d32" opacity=".075"/>
+  <path d="M179 364L245 327L627 367L566 401Z" fill="#163d32" opacity=".045"/>
+  <g>
+    <!-- Far wheels sit behind the body. -->
+    <ellipse cx="299" cy="323" rx="17" ry="26" fill="#163d32"/>
+    <ellipse cx="589" cy="354" rx="17" ry="26" fill="#163d32"/>
+
+    <!-- Roof cap with a modest raised central panel. -->
+    <path d="M160 216L221 175Q227 171 237 172L611 214Q621 215 625 223L558 267Z" fill="#d6e2ad" stroke="#163d32" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M164 210L224 171Q229 168 238 169L610 211Q618 212 621 217L557 260Z" fill="#f8f6ef" stroke="#163d32" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M186 211L230 182L595 223L552 252" stroke="#dce3ce" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M271 195L287 184L365 193L348 204Z" fill="#e6f0b9" stroke="#163d32" stroke-width="1.1" stroke-linejoin="round"/>
+    <path d="M282 195L294 188M292 196L304 189M302 197L314 190M312 198L324 191M322 199L334 192M332 200L344 193" stroke="#163d32" stroke-width=".9" opacity=".45"/>
+    <path d="M422 212L438 201L488 207L472 218Z" fill="#e6f0b9" stroke="#163d32" stroke-width="1.1" stroke-linejoin="round"/>
+    <path d="M425 213L473 218V221L425 216Z" fill="#163d32" opacity=".18"/>
+    <path d="M202 194L213 187M535 231L547 223" stroke="#163d32" stroke-width="1.2" stroke-linecap="round" opacity=".35"/>
+
+    <!-- Visible side: every detail follows the same perspective plane. -->
+    <g transform="matrix(1 .112 0 1 0 0)">
+      <rect x="160" y="198" width="398" height="127" rx="11" fill="#e6f0b9" stroke="#163d32" stroke-width="1.7"/>
+      <g clip-path="url(#side-clip)">
+        <path d="M160 198H558V212H160Z" fill="#f8f6ef"/>
+        <path d="M160 279H558V325H160Z" fill="#163d32"/>
+        <path d="M160 274H558V280H160Z" fill="#e89862"/>
+        <path d="M160 322H558" stroke="#0f3028" stroke-width="7"/>
+        <path d="M167 209H550" stroke="#163d32" stroke-width="1.3"/>
+        <!-- Rubber window surround. -->
+        <rect x="172" y="215" width="320" height="49" rx="5" fill="#163d32"/>
+        <!-- Quiet, contrasting glass panels. -->
+        <path d="M180 220H218V257H180Q177 257 177 254V223Q177 220 180 220Z" fill="#6f9280"/>
+        <path d="M225 220H265V257H225Z" fill="#6f9280"/>
+        <path d="M272 220H312V257H272Z" fill="#6f9280"/>
+        <path d="M319 220H359V257H319Z" fill="#6f9280"/>
+        <path d="M366 220H406V257H366Z" fill="#6f9280"/>
+        <path d="M413 220H453V257H413Z" fill="#6f9280"/>
+        <path d="M460 220H484Q487 220 487 223V254Q487 257 484 257H460Z" fill="#6f9280"/>
+        <!-- Reflections remain broad and hand-cut, not photorealistic. -->
+        <path d="M181 220H200L178 249V225Z" fill="#e6f0b9" opacity=".48"/>
+        <path d="M225 239L240 220H254L225 257Z" fill="#e6f0b9" opacity=".24"/>
+        <path d="M278 220H286L272 240V229Z" fill="#f8f6ef" opacity=".36"/>
+        <path d="M321 220H344L319 254V223Z" fill="#e6f0b9" opacity=".4"/>
+        <path d="M371 257L397 220H406V231L388 257Z" fill="#e6f0b9" opacity=".25"/>
+        <path d="M417 220H427L413 239V225Z" fill="#f8f6ef" opacity=".32"/>
+        <path d="M462 220H481L460 247V223Z" fill="#e6f0b9" opacity=".32"/>
+        <!-- Upper sliding-window rails and interior seat silhouettes. -->
+        <path d="M177 235H487" stroke="#163d32" stroke-width="1.4"/>
+        <path d="M202 254V247Q202 244 206 244H212V257M248 257V249Q248 245 252 245H260V257M293 257V249Q293 245 297 245H307V257M340 257V249Q340 245 344 245H353V257M387 257V249Q387 245 391 245H400V257M434 257V249Q434 245 438 245H447V257" fill="#315b49"/>
+        <!-- Front double door, with its windows and entry step. -->
+        <rect x="499" y="214" width="46" height="105" rx="2" fill="#0f3028"/>
+        <rect x="503" y="218" width="17" height="76" rx="2" fill="#527762"/>
+        <rect x="524" y="218" width="17" height="76" rx="2" fill="#527762"/>
+        <path d="M506 218H516L503 239V223ZM527 218H537L524 240V223Z" fill="#e6f0b9" opacity=".5"/>
+        <path d="M508 250V285M534 250V285" stroke="#e89862" stroke-width="2" stroke-linecap="round"/>
+        <path d="M503 298H541M503 307H541M503 315H541" stroke="#b5c8a0" stroke-width="1.5"/>
+        <path d="M522 216V316" stroke="#e6f0b9" stroke-width="1" opacity=".55"/>
+        <!-- Lower service panels, small trim, rear ventilation. -->
+        <path d="M273 283V317M395 283V317" stroke="#e6f0b9" stroke-width="1" opacity=".28"/>
+        <rect x="285" y="290" width="96" height="24" rx="3" stroke="#e6f0b9" stroke-width="1" opacity=".3"/>
+        <path d="M329 294H337" stroke="#e6f0b9" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+        <path d="M174 289H196M174 294H196M174 299H196M174 304H196M174 309H196" stroke="#e6f0b9" stroke-width="1.2" stroke-linecap="round" opacity=".5"/>
+        <rect x="166" y="267" width="7" height="10" rx="1.5" fill="#e89862" stroke="#163d32" stroke-width=".8"/>
+        <rect x="404" y="289" width="8" height="4" rx="1.5" fill="#e89862"/>
+        <path d="M177 270H481" stroke="#163d32" stroke-width="1" opacity=".25"/>
+        <!-- Wheel arches. -->
+        <path d="M204 325V315A27 27 0 0 1 258 315V325Z" fill="#f8f6ef"/>
+        <path d="M433 325V315A27 27 0 0 1 487 315V325Z" fill="#f8f6ef"/>
+        <path d="M202 322V314A29 29 0 0 1 260 314M431 322V314A29 29 0 0 1 489 314" stroke="#e6f0b9" stroke-width="2" opacity=".8"/>
+      </g>
+      <path d="M165 202H548" stroke="#f8f6ef" stroke-width="2" stroke-linecap="round"/>
+      <path d="M164 316H194" stroke="#e6f0b9" stroke-width="1.2" opacity=".35"/>
+    </g>
+
+    <!-- Narrow forward-facing plane. -->
+    <g transform="matrix(1 -.667 0 1 0 0)">
+      <path d="M558 634H613Q625 634 625 646V749Q625 761 613 761H558Z" fill="#ceddaa" stroke="#163d32" stroke-width="1.6" stroke-linejoin="round"/>
+      <g clip-path="url(#front-clip)">
+        <path d="M558 634H625V645H558Z" fill="#f8f6ef"/>
+        <rect x="566" y="650" width="51" height="50" rx="5" fill="#163d32"/>
+        <path d="M572 654H610Q613 654 613 658V693Q613 696 610 696H572Q570 696 570 693V658Q570 654 572 654Z" fill="#527762"/>
+        <path d="M572 654H589L570 683V659Z" fill="#e6f0b9" opacity=".55"/>
+        <path d="M595 696L613 668V683L605 696Z" fill="#e6f0b9" opacity=".25"/>
+        <path d="M591 653V698" stroke="#163d32" stroke-width="1.5"/>
+        <path d="M576 694L584 684M599 694L607 684" stroke="#163d32" stroke-width="1.7" stroke-linecap="round"/>
+        <!-- Blank destination plate, intentionally without words. -->
+        <rect x="574" y="640" width="31" height="6" rx="2" fill="#163d32"/>
+        <path d="M558 708H625V714H558Z" fill="#e89862"/>
+        <path d="M558 720H625V761H558Z" fill="#163d32"/>
+        <path d="M578 727H606M578 731H606M578 735H606" stroke="#e6f0b9" stroke-width="1.1" stroke-linecap="round" opacity=".55"/>
+        <rect x="564" y="731" width="10" height="9" rx="2.5" fill="#f8f6ef"/>
+        <rect x="611" y="731" width="10" height="9" rx="2.5" fill="#f8f6ef"/>
+        <rect x="565" y="724" width="8" height="4" rx="1.5" fill="#e89862"/>
+        <rect x="612" y="724" width="8" height="4" rx="1.5" fill="#e89862"/>
+        <path d="M558 749H625V757H558Z" fill="#ceddaa"/>
+        <path d="M558 758H625V763H558Z" fill="#0f3028"/>
+        <rect x="584" y="744" width="17" height="7" rx="1.5" fill="#e6f0b9"/>
+      </g>
+    </g>
+
+    <!-- Side mirrors are tiny but make the silhouette unmistakably a bus. -->
+    <path d="M558 270L570 274L575 285" stroke="#163d32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="570" y="280" width="11" height="20" rx="4" fill="#163d32"/>
+    <path d="M573 284V294" stroke="#d6e2ad" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M622 237L638 233V248" stroke="#163d32" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M635 244L642 241V254L635 257Z" fill="#163d32"/>
+
+    <!-- Near wheels, deep tread and restrained cream hubs. -->
+    <g transform="translate(231 344) rotate(6)">
+      <ellipse rx="22" ry="28" fill="#0f3028"/>
+      <ellipse cx="-2" rx="16" ry="22" fill="#244e3e" stroke="#365c49" stroke-width="1.5"/>
+      <ellipse cx="-2" rx="11" ry="16" fill="#d1dbb5"/>
+      <ellipse cx="-3" rx="5" ry="8" fill="#163d32"/>
+      <path d="M-3-12V-10M-3 10V12M-10-6L-8-5M-10 6L-8 5M4-6L2-5M4 6L2 5" stroke="#527762" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M-16-17C-23-7-23 7-16 18" stroke="#456350" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(460 370) rotate(6)">
+      <ellipse rx="22" ry="28" fill="#0f3028"/>
+      <ellipse cx="-2" rx="16" ry="22" fill="#244e3e" stroke="#365c49" stroke-width="1.5"/>
+      <ellipse cx="-2" rx="11" ry="16" fill="#d1dbb5"/>
+      <ellipse cx="-3" rx="5" ry="8" fill="#163d32"/>
+      <path d="M-3-12V-10M-3 10V12M-10-6L-8-5M-10 6L-8 5M4-6L2-5M4 6L2 5" stroke="#527762" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M-16-17C-23-7-23 7-16 18" stroke="#456350" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Foreground growth keeps the composition optimistic and human. -->
+  <ellipse cx="669" cy="444" rx="30" ry="7" fill="#163d32" opacity=".06"/>
+  <path d="M668 443C670 424 666 410 672 394" stroke="#163d32" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M670 425C651 424 644 412 647 400C662 400 674 410 670 425Z" fill="#e6f0b9" stroke="#163d32" stroke-width="1.3"/>
+  <path d="M669 415C668 400 678 389 691 389C692 403 683 414 669 415Z" fill="#163d32"/>
+  <path d="M671 405C659 401 655 391 660 382C671 385 677 395 671 405Z" fill="#e89862"/>
+  <path d="M670 425L654 408M670 414L683 398" stroke="#163d32" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M670 414L683 398" stroke="#e6f0b9" stroke-width="1" stroke-linecap="round"/>
+  <path d="M657 443H680" stroke="#163d32" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M146 449V435M146 444C136 444 131 437 132 430C140 429 147 435 146 444ZM146 439C146 431 152 426 159 427C159 434 153 439 146 439Z" stroke="#163d32" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="192" cy="474" r="3.5" fill="#e89862"/>
+  <circle cx="590" cy="467" r="2.5" fill="#163d32" opacity=".4"/>
+  <path d="M397 506V514M393 510H401" stroke="#163d32" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M742 393C746 386 751 386 755 392C759 386 764 387 768 392" stroke="#163d32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

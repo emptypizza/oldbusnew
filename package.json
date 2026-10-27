@@ -1,0 +1,12 @@
+{
+  "name": "oldbusnew",
+  "version": "1.0.0",
+  "private": true,
+  "description": "대한민국 퇴역 버스의 다음 생애를 탐색하는 데이터 인포그래픽 웹사이트",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check app.js && node scripts/verify.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
